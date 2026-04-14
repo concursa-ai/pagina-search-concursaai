@@ -183,7 +183,7 @@ nav .container{display:flex;align-items:center;justify-content:space-between;}
 .hero-stat-label{font-size:.72rem;color:var(--text-muted);margin-top:2px;font-family:var(--mono);text-transform:uppercase;letter-spacing:1.5px;}
 
 /* Terminal */
-.hero-visual{position:relative;display:flex;align-items:center;justify-content:center;}
+.hero-visual{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;}
 .hero-terminal{width:100%;max-width:520px;background:linear-gradient(135deg,var(--bg-card),#1a1712);border:1px solid var(--border-accent);border-radius:12px;overflow:hidden;box-shadow:var(--glow-y),var(--glow-c),0 20px 60px rgba(0,0,0,.5);position:relative;}
 .hero-terminal::before{content:'';position:absolute;inset:0;border-radius:12px;padding:1px;background:linear-gradient(135deg,var(--y400),transparent 40%,transparent 60%,var(--c400));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.3;pointer-events:none;}
 .terminal-header{display:flex;align-items:center;gap:8px;padding:12px 16px;background:rgba(0,0,0,.3);border-bottom:1px solid var(--border);}
@@ -217,10 +217,10 @@ nav .container{display:flex;align-items:center;justify-content:space-between;}
 .t-cursor{display:inline-block;width:8px;height:14px;background:var(--y400);vertical-align:middle;animation:blink 1s step-end infinite;margin-left:2px;}
 
 /* ═════ HERO EVANDRO IMAGE ═════ */
-.hero-evandro{display:block;max-width:360px;width:90%;height:auto;margin:0 auto -40px;position:relative;z-index:3;filter:drop-shadow(0 20px 40px rgba(248,124,86,.25)) drop-shadow(0 4px 18px rgba(0,0,0,.5));animation:evandroFloat 6s ease-in-out infinite;}
+.hero-evandro{display:block;width:100%;max-width:380px;height:auto;margin:0 auto -30px;position:relative;z-index:3;filter:drop-shadow(0 20px 40px rgba(248,124,86,.25)) drop-shadow(0 4px 18px rgba(0,0,0,.5));animation:evandroFloat 6s ease-in-out infinite;object-fit:contain;}
 @keyframes evandroFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
-@media(max-width:768px){.hero-evandro{max-width:260px;margin-bottom:-28px;}}
-@media(max-width:480px){.hero-evandro{max-width:220px;margin-bottom:-22px;}}
+@media(max-width:768px){.hero-evandro{max-width:280px;margin-bottom:-22px;}}
+@media(max-width:480px){.hero-evandro{max-width:220px;margin-bottom:-18px;}}
 
 /* ═════ HERO SEARCH (Google-like) ═════ */
 .hero-search{width:100%;max-width:540px;background:linear-gradient(135deg,var(--bg-card),#1a1712);border:1px solid var(--border-accent);border-radius:18px;padding:40px 30px 28px;position:relative;box-shadow:var(--glow-y),var(--glow-c),0 20px 60px rgba(0,0,0,.5);}
