@@ -219,8 +219,8 @@ nav .container{display:flex;align-items:center;justify-content:space-between;}
 /* ═════ HERO EVANDRO IMAGE ═════ */
 .hero-evandro{display:block;width:100%;max-width:380px;height:auto;margin:0 auto -30px;position:relative;z-index:3;filter:drop-shadow(0 20px 40px rgba(248,124,86,.25)) drop-shadow(0 4px 18px rgba(0,0,0,.5));animation:evandroFloat 6s ease-in-out infinite;object-fit:contain;}
 @keyframes evandroFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
-@media(max-width:768px){.hero-evandro{max-width:280px;margin-bottom:-22px;}}
-@media(max-width:480px){.hero-evandro{max-width:220px;margin-bottom:-18px;}}
+@media(max-width:768px){.hero-evandro{max-width:440px;margin-bottom:-28px;}}
+@media(max-width:480px){.hero-evandro{max-width:380px;width:98%;margin-bottom:-24px;}}
 
 /* ═════ HERO SEARCH (Google-like) ═════ */
 .hero-search{width:100%;max-width:540px;background:linear-gradient(135deg,var(--bg-card),#1a1712);border:1px solid var(--border-accent);border-radius:18px;padding:40px 30px 28px;position:relative;box-shadow:var(--glow-y),var(--glow-c),0 20px 60px rgba(0,0,0,.5);}
@@ -583,8 +583,10 @@ footer{padding:60px 0 30px;border-top:1px solid var(--border);background:var(--b
   .hero h1{font-size:1.75rem;}
   .hero-badge{font-size:.58rem;}
   .chip-badge{display:none;}
-  .hero-stats{flex-direction:column;}
-  .hero-stat{width:100%;text-align:left;border-top:none;border-left:2px solid var(--y400);padding-left:14px;padding-top:0;}
+  .hero-stats{flex-direction:row;flex-wrap:nowrap;gap:8px;width:100%;justify-content:space-between;}
+  .hero-stat{flex:1;min-width:0;text-align:center;border-left:none;border-top:2px solid var(--y400);padding-left:0;padding-top:8px;}
+  .hero-stat-value{font-size:1.1rem;white-space:nowrap;}
+  .hero-stat-label{font-size:.56rem;letter-spacing:.8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .proof-grid{flex-direction:column;align-items:flex-start;gap:16px;}
   .proof-item{width:100%;}
   .trending-chips .tc-chip{font-size:.6rem;padding:3px 8px;}
