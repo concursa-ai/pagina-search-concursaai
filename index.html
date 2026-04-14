@@ -216,6 +216,12 @@ nav .container{display:flex;align-items:center;justify-content:space-between;}
 .t-com{color:var(--text-muted);font-style:italic;}
 .t-cursor{display:inline-block;width:8px;height:14px;background:var(--y400);vertical-align:middle;animation:blink 1s step-end infinite;margin-left:2px;}
 
+/* ═════ HERO EVANDRO IMAGE ═════ */
+.hero-evandro{display:block;max-width:360px;width:90%;height:auto;margin:0 auto -40px;position:relative;z-index:3;filter:drop-shadow(0 20px 40px rgba(248,124,86,.25)) drop-shadow(0 4px 18px rgba(0,0,0,.5));animation:evandroFloat 6s ease-in-out infinite;}
+@keyframes evandroFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+@media(max-width:768px){.hero-evandro{max-width:260px;margin-bottom:-28px;}}
+@media(max-width:480px){.hero-evandro{max-width:220px;margin-bottom:-22px;}}
+
 /* ═════ HERO SEARCH (Google-like) ═════ */
 .hero-search{width:100%;max-width:540px;background:linear-gradient(135deg,var(--bg-card),#1a1712);border:1px solid var(--border-accent);border-radius:18px;padding:40px 30px 28px;position:relative;box-shadow:var(--glow-y),var(--glow-c),0 20px 60px rgba(0,0,0,.5);}
 .hero-search::before{content:'';position:absolute;inset:0;border-radius:18px;padding:1px;background:linear-gradient(135deg,var(--y400),transparent 40%,transparent 60%,var(--c400));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.3;pointer-events:none;}
@@ -658,6 +664,7 @@ footer{padding:60px 0 30px;border-top:1px solid var(--border);background:var(--b
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
         BUSCA.IA
       </div>
+      <img src="images/evandro.png" alt="Evandro Guedes — mentor do Concursa AI" class="hero-evandro">
       <div class="hero-search">
         <div class="search-logo">
           <img src="images/logomarca.png" alt="Concursa AI" class="search-logo-img">
